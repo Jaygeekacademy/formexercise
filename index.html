@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href=“https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css”
+    rel=“stylesheet”/>
 </head>
 <body>
     <form action="credit card">
@@ -12,9 +15,9 @@
         <table>
             <th>Payment form example</th>
             <tr>
-                <td> Card# <input type="number"></td>
-                <td>CVC # <input type="number"></td>
-                <td>Amount <input type="number" name="" id=""></td>
+                <td> Card# <input type="text" placeholder="XXXXXXXXXXXXXXXX"></td>
+                <td>CVC # <input type="text"></td>
+                <td>Amount <input type="text" name="" id=""></td>
             </tr>
             <tr>
                 <td>First name <input type="text"></td>
@@ -25,19 +28,29 @@
                 <td>City <input type="text"></td>
                 <td><label for="State">State</label>
                     <select name="state" id="state">
-                        <option value="Alaska"></option>
-                        <option value="Florida"></option>
-                        <option value="Texas"></option>
+                        <option value="Alaska">Alaska</option>
+                        <option value="Florida">Florida</option>
+                        <option value="Texas">Texas</option>
                     </select>
                 <td>Postal Code <input type="text"></td>
 
             <tr>
                 <td>We accept
+                    <div class="radioclass">
+                        <input type="radio" name="Credit Card" id="Amex">
+                        <label for="amex"></label><i class="fa-solid fa-credit-card"></i>
+                        <input type="radio" name="Credit Card" id="Visa">
+                        <label for="Visa"></label>
+                        <input type="radio" name="Credit Card" id="Diners">
+                        <label for="Diners"></label>
+                        <input type="radio" name="Credit Card" id="Master">
+                        <label for="Master"></label>
 
 
-
-                    
+                    </div>
+                   
                 </td>
+                <td><label for="Message">Message</label><input class="messagebox" type="text"></td>
 
 
             </tr>

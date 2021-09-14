@@ -1,0 +1,11 @@
+.messagebox {
+    width: 300px;
+    height: 60px;
+}
+.radioclass {
+    border: 2px solid black;
+    display: flex;
+  
+   justify-content: space-evenly;
+
+}
