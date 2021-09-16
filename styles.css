@@ -1,5 +1,19 @@
+.form {
+    margin: auto;
+    background-color: aqua;
+
+}
+
+
+.wrapper {
+
+    margin: auto;
+    padding: 20px;
+    
+    }
+    
 .messagebox {
-    width: 300px;
+    width: 500px;
     height: 60px;
 }
 .radioclass {

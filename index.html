@@ -6,36 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
-    <link href=“https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css”
-    rel=“stylesheet”/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 </head>
 <body>
-    <form action="credit card">
+    <form action="credit card" class="form">
 
-        <table>
-            <th>Payment form example</th>
-            <tr>
-                <td> Card# <input type="text" placeholder="XXXXXXXXXXXXXXXX"></td>
-                <td>CVC # <input type="text"></td>
-                <td>Amount <input type="text" name="" id=""></td>
-            </tr>
-            <tr>
-                <td>First name <input type="text"></td>
-                <td>Last Name <input type="text"></td>
-            </tr>
+            
+       
+     
+       
+            <h1 class="p-3">Payment form example</h1>
+            
+              <div class="row">
+                  <div class="col-3"><label for=""> Card# </label> <input type="text" placeholder="XXXXXXXXXXXXXXXX"></div>
+                   <div class="col-3"><label for="">CVC</label><input type="text"></div>
+                   <div class="col-3"><label for="">Amount</label> <input type="text" name="" id=""></div>
+              </div>
+            
+            <div>
+              <label for="">First name </label>  <input type="text">
+              <label for="">Last Name </label>  <input type="text">
+            </div>
 
-            <tr>
-                <td>City <input type="text"></td>
-                <td><label for="State">State</label>
-                    <select name="state" id="state">
+            <div>
+                <label for="">City</label><input type="text">
+                <label for="State">State</label>
+                    <select class="custom-select"name="state" id="state">
                         <option value="Alaska">Alaska</option>
                         <option value="Florida">Florida</option>
                         <option value="Texas">Texas</option>
                     </select>
-                <td>Postal Code <input type="text"></td>
+                <label for="">Postal Code</label><input type="text">
 
-            <tr>
-                <td>We accept
+            <div>
+                <h4>We Accepte</h4>
                     <div class="radioclass">
                         <input type="radio" name="Credit Card" id="Amex">
                         <label for="amex"><img src="american.png" alt=""></label>
@@ -53,17 +57,17 @@
                 <td><label for="Message">Message</label><input class="messagebox" type="text"></td>
 
 
-            </tr>
+            </div>
                 
                 
                 </td>
 
 
-            </tr>
+            </div>
 
 
 
-        </table>
+        
 
 
 
