@@ -1,25 +1,10 @@
-.form {
-    margin: auto;
-    background-color: aqua;
+.container {
 
-}
-
-
-.wrapper {
-
-    margin: auto;
     padding: 20px;
+    border: solid 5px;
     
-    }
-    
-.messagebox {
-    width: 500px;
-    height: 60px;
 }
-.radioclass {
-    border: 2px solid black;
-    display: flex;
-  
-   justify-content: space-evenly;
+.row {
 
+    margin-block: 20px;
 }
