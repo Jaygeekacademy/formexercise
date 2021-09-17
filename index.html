@@ -1,101 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    
-    <div class="container">
-        <div class="row justify-content-start">
-          <div class="col-12">
-           <h3>Payment form example</h3> 
-          </div>
-        </div>
-        <div class="row justify-content-start">
-            <div class="col-12">
-              Some fields are missing
-            </div>
-        </div>
-        <div class="row justify-content-start">
-          <div class="col-5">Card#
-            
-          </div>
-          <div class="col-3"> CVC# 
-           
-          </div>
-          <div class="col-3">Amount
-            
-          </div>
-        </div>        
-        <div class="row justify-content-start">
-          <div class="col-5"><input type="text" placeholder="XXXXXXXXXXXXXXXX">
-            
-          </div>
-          <div class="col-3"><input type="text">
-           
-          </div>
-          <div class="col-3"><input type="text">
-            
-          </div>
-        </div>
-        <div class="row justify-content-start">
-          <div class="col-6">
-            First Name 
-          </div>
-          <div class="col-6">
-            Last Name
-          </div>
-        </div>
-        <div class="row justify-content-start">
-          <div class="col-6">
-            First Name <input type="text">
-          </div>
-          <div class="col-6">
-            Last Name <input type="text">
-          </div>
-        </div>
-        <div class="row justify-content-start">
-          <div class="col-5">
-            City <input type="text">
-          </div>
-          <div class="col-3">
-            <label for="State">State</label>
-            <select class="custom-select"name="state" id="state">
-                <option value="Alaska">Alaska</option>
-                <option value="Florida">Florida</option>
-                <option value="Texas">Texas</option>
-            </select>
 
-          </div>
-          <div class="col-3">
-            Postal code <input type="text">
-          </div>
-        </div>
-        <div class="row justify-content-start">
-          <div class="col-4">We accept:
-            <div class="radioclass">
-              <input type="radio" name="Credit Card" id="Amex">
-              <label for="amex"><img src="american.png" alt=""></label>
-              <input type="radio" name="Credit Card" id="Visa">
-              <label for="Visa"><img src="american.png" alt=""></label>
-              <input type="radio" name="Credit Card" id="Diners">
-              <label for="Diners"><img src="american.png" alt=""></label>
-              <input type="radio" name="Credit Card" id="Master">
-              <label for="Master"><img src="american.png" alt=""></label>
+  <div class="container border">
+    <div class="row justify-content-start">
+      <div class="col-12">
+        <h3>Payment form example</h3>
+      </div>
+    </div>
+    <div class="row justify-content-start">
+      <div class="col alert alert-danger" role="alert">
+        Some fields are missing
+      </div>
+    </div>
 
+    <div class="row justify-content-start">
 
-          </div>
-          </div>
-          <div class="col-6"> <label for="Message">Message</label><textarea name="Message" id="" cols="60" rows="5"></textarea>
-            
-          </div>
+      <div class="col-5">
+        <label for="card#">Card#</label>
+        <input type="text" class="col" placeholder="XXXXXXXXXXXXXXXX">
+      </div>
+      <div class="col-3">
+        <label for="CVC#">CVC#</label>
+        <input type="text" class="col">
+      </div>
+      <div class="col-4">
+        <label for="Amount">Amount</label>
+        <input type="text" class="col">
+      </div>
+    </div>
+    <div class="row justify-content-start">
+      <div class="col-6">
+        <label for="First">First Name</label>
+        <input type="text" class="col">
+      </div>
+      <div class="col-6">
+        <label for="Last">Last Name </label>
+        <input type="text" class="col">
+      </div>
+    </div>
+    <div class="row justify-content-start">
+      <div class="col-6">
+        <label for="City">City </label>
+        <input type="text" class="col">
+      </div>
+      <div class="col-3">
+        <label for="State">State</label>
+        <select class="custom-select" name="state" id="state">
+          <option value="Alaska">Alaska</option>
+          <option value="Florida">Florida</option>
+          <option value="Texas">Texas</option>
+        </select>
+
+      </div>
+      <div class="col-3">
+        <label for="post">Postal code</label>
+        <input type="text" class="col">
+      </div>
+    </div>
+    <div class="row justify-content-start">
+      <div class="col-6">We accept:
+        <div class="radioclass">
+          <input type="radio" name="Credit Card" id="Amex">
+          <label for="amex"><img src="american.png" alt=""></label>
+          <input type="radio" name="Credit Card" id="Visa">
+          <label for="Visa"><img src="american.png" alt=""></label>
+          <input type="radio" name="Credit Card" id="Diners">
+          <label for="Diners"><img src="american.png" alt=""></label>
+          <input type="radio" name="Credit Card" id="Master">
+          <label for="Master"><img src="american.png" alt=""></label>
         </div>
       </div>
-    
+      <div class="col-6">
+        <label for="Message" class="col">Message</label>
+        <textarea name="Message" id="" class="col" rows="5"></textarea>
+        <label for="add">Add any notes here</label>
+      </div>
+    </div>
+  </div>
+
 </body>
+
 </html>
